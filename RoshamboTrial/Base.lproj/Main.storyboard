@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PlayViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="PlayViewController" id="BYZ-38-t0r" customClass="PlayViewController" customModule="RoshamboTrial" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-P6-KX6">
+                                <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wY9-ZJ-iDe">
+                                        <rect key="frame" x="134" y="0.0" width="75" height="205"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-K6-tDh" userLabel="Paper">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="205"/>
+                                                <state key="normal" image="paper"/>
+                                                <connections>
+                                                    <action selector="papersView" destination="BYZ-38-t0r" eventType="touchUpInside" id="V19-bK-GAF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tRh-mR-cv4">
+                                        <rect key="frame" x="86.5" y="213" width="170" height="205"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zlx-Xp-5wj">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="205"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWv-3s-kHd" userLabel="Rock">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="205"/>
+                                                        <state key="normal" image="rock"/>
+                                                        <connections>
+                                                            <action selector="rocksView" destination="BYZ-38-t0r" eventType="touchUpInside" id="cM6-4w-3Va"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-yr-or6">
+                                                <rect key="frame" x="95" y="0.0" width="75" height="205"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aC-WJ-q6O" userLabel="Scissors">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="205"/>
+                                                        <state key="normal" image="scissors"/>
+                                                        <connections>
+                                                            <segue destination="6gZ-vy-g9B" kind="presentation" identifier="scissorsView" id="52X-7q-ggV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's Play!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89n-xa-JXR">
+                                        <rect key="frame" x="133" y="426" width="77.5" height="205"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="jJA-P6-KX6" secondAttribute="trailing" id="J8t-RI-7CD"/>
+                            <constraint firstItem="jJA-P6-KX6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="RiK-bX-gi2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jJA-P6-KX6" secondAttribute="bottom" constant="8" symbolic="YES" id="fGG-F8-UFh"/>
+                            <constraint firstItem="jJA-P6-KX6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="m5v-Ya-Kdw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="6gZ-vy-g9B" kind="presentation" identifier="papersView" id="9fK-qN-Rn0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="125"/>
+        </scene>
+        <!--ResultViewController-->
+        <scene sceneID="JNb-Fo-dqJ">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" title="ResultViewController" id="6gZ-vy-g9B" customClass="ResultViewController" customModule="RoshamboTrial" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PWZ-VG-894"/>
+                        <viewControllerLayoutGuide type="bottom" id="sE3-sS-IVR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U9v-El-vLI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jIA-5q-qAg">
+                                <rect key="frame" x="16" y="28" width="343" height="631"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hBh-o7-Ug9">
+                                        <rect key="frame" x="80" y="0.0" width="183" height="315.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itsATie" translatesAutoresizingMaskIntoConstraints="NO" id="P8s-Us-g5B">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="200"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hig-M7-4D6">
+                                                <rect key="frame" x="63.5" y="200" width="56" height="115.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38W-oj-Ad4">
+                                        <rect key="frame" x="133.5" y="315.5" width="76" height="315.5"/>
+                                        <state key="normal" title="Play Again!"/>
+                                        <connections>
+                                            <action selector="dismiss" destination="6gZ-vy-g9B" eventType="touchUpInside" id="tEy-RT-ntG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jIA-5q-qAg" firstAttribute="top" secondItem="PWZ-VG-894" secondAttribute="bottom" constant="8" symbolic="YES" id="dYR-Vh-Czn"/>
+                            <constraint firstItem="jIA-5q-qAg" firstAttribute="leading" secondItem="U9v-El-vLI" secondAttribute="leadingMargin" id="nu6-yP-zCU"/>
+                            <constraint firstItem="sE3-sS-IVR" firstAttribute="top" secondItem="jIA-5q-qAg" secondAttribute="bottom" constant="8" symbolic="YES" id="s3E-QJ-4wo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jIA-5q-qAg" secondAttribute="trailing" id="sQT-Fk-AXQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultImage" destination="P8s-Us-g5B" id="nyT-Qw-0Aa"/>
+                        <outletCollection property="resultLabel" destination="hig-M7-4D6" collectionClass="NSMutableArray" id="Gev-1C-qgt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhH-eh-kdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="itsATie" width="183" height="200"/>
+        <image name="paper" width="75" height="65"/>
+        <image name="rock" width="75" height="65"/>
+        <image name="scissors" width="75" height="65"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="9fK-qN-Rn0"/>
+    </inferredMetricsTieBreakers>
+</document>
