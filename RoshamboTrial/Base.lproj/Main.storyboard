@@ -32,7 +32,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="205"/>
                                                 <state key="normal" image="paper"/>
                                                 <connections>
-                                                    <action selector="papersView" destination="BYZ-38-t0r" eventType="touchUpInside" id="V19-bK-GAF"/>
+                                                    <action selector="papersView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tsn-RP-Zah"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -47,7 +47,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="75" height="205"/>
                                                         <state key="normal" image="rock"/>
                                                         <connections>
-                                                            <action selector="rocksView" destination="BYZ-38-t0r" eventType="touchUpInside" id="cM6-4w-3Va"/>
+                                                            <action selector="rocksView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wry-cE-grj"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -140,7 +140,7 @@
                     </view>
                     <connections>
                         <outlet property="resultImage" destination="P8s-Us-g5B" id="nyT-Qw-0Aa"/>
-                        <outletCollection property="resultLabel" destination="hig-M7-4D6" collectionClass="NSMutableArray" id="Gev-1C-qgt"/>
+                        <outlet property="resultLabel" destination="hig-M7-4D6" id="K5v-ml-Agl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AhH-eh-kdI" userLabel="First Responder" sceneMemberID="firstResponder"/>

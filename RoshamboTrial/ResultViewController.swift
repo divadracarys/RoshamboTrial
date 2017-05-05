@@ -25,6 +25,8 @@ class ResultViewController: UIViewController {
         
     override func viewWillAppear(_ animated: Bool) {
         
+        super.viewWillAppear(animated)
+        
         func numberToHand(_ value: Int) -> String {
             switch value {
             case 1:

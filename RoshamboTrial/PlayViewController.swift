@@ -18,7 +18,7 @@ class PlayViewController: UIViewController {
     
     // MARK: ROCK
     // This is for code only method
-    @IBAction func rocksView() {
+    @IBAction func rocksView(_ sender: UIButton) {
         var controller: ResultViewController
         controller = storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
         controller.otherHand = valueForApp()
@@ -39,8 +39,8 @@ class PlayViewController: UIViewController {
     
     // MARK: Actions
     // For Paper Only
-    @IBAction func papersView() {
-        performSegue(withIdentifier: "papersView", sender: self)
+    @IBAction func papersView(_ sender: UIButton) {
+        performSegue(withIdentifier: "papersView", sender: sender)
     }
 
     
